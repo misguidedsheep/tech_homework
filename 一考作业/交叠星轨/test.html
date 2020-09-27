@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>教务处</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <div class="navWrap">
+    <div class="nav w1200">
+      <!--网站导航-->
+      <ul>
+        <!--#begineditable clone="0" namechanged="0" order="3" ispublic="0" tagname="网站导航" viewid="127438" contentviewid="" contype="" stylesysid="" layout="" action="" name="网站导航"-->
+        <li class="mainmenu"><a href="index.htm" title="网站首页">网站首页</a></li>
+
+        <li class="mainmenu"><a href="bmgk.htm" title="部门概况">部门概况</a>
+          <div id="nav" style="display: none;">
+
+            <a href="bmgk/bmjj.htm" title="部门简介">部门简介</a>
+
+            <a href="bmgk/bmld.htm" title="部门领导">部门领导</a>
+
+            <a href="bmgk/jgsz.htm" title="机构设置">机构设置</a>
+
+            <a href="bmgk/lxwm.htm" title="联系我们">联系我们</a>
+          </div>
+        </li>
+
+        <li class="mainmenu"><a href="djgz/zzjj.htm" target="_blank" title="党建工作">党建工作</a>
+          <div id="nav" style="display: none;">
+
+            <a href="djgz/zzjj.htm" title="组织简介">组织简介</a>
+
+            <a href="djgz/zbsh.htm" title="支部生活">支部生活</a>
+
+            <a href="djgz/xxyd.htm" title="学习园地">学习园地</a>
+          </div>
+        </li>
+
+        <li class="mainmenu cur"><a href="jxxx.htm" title="教学信息">教学信息</a>
+          <div id="nav" style="display: none;">
+
+            <a href="jxxx/xwdt.htm" title="新闻动态">新闻动态</a>
+
+            <a href="jxxx/xytz.htm" title="学业通知">学业通知</a>
+
+            <a href="jxxx/zhtz.htm" title="综合通知">综合通知</a>
+
+            <a href="jxxx/ddjb.htm" title="督导简报">督导简报</a>
+
+            <a href="list.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1012" title="质量报告">质量报告</a>
+
+            <a href="list.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1131" title="课程思政">课程思政</a>
+          </div>
+        </li>
+
+        <li class="mainmenu"><a href="gzzd.htm" title="规章制度">规章制度</a>
+          <div id="nav" style="display: none;">
+
+            <a href="gzzd/jwgl.htm" title="教务管理">教务管理</a>
+
+            <a href="gzzd/jxyj.htm" title="教学研究">教学研究</a>
+
+            <a href="gzzd/jxsj.htm" title="教学实践">教学实践</a>
+
+            <a href="gzzd/hzjl.htm" title="合作交流">合作交流</a>
+
+            <a href="gzzd/zhsw.htm" title="综合事务">综合事务</a>
+          </div>
+        </li>
+
+        <li class="mainmenu"><a href="gzlc.htm" title="工作流程">工作流程</a>
+          <div id="nav" style="display: none;">
+
+            <a href="gzlc/jxglry.htm" title="教学管理人员">教学管理人员</a>
+
+            <a href="gzlc/js.htm" title="教师">教师</a>
+
+            <a href="gzlc/xs.htm" title="学生">学生</a>
+          </div>
+        </li>
+
+        <li class="mainmenu"><a href="zlxz.htm" title="资料下载">资料下载</a>
+          <div id="nav" style="display: none;">
+
+            <a href="zlxz/jwgl.htm" title="教务管理">教务管理</a>
+
+            <a href="zlxz/jxyj.htm" title="教学研究">教学研究</a>
+
+            <a href="zlxz/sjjx.htm" title="实践教学">实践教学</a>
+
+            <a href="zlxz/hzjl.htm" title="合作交流">合作交流</a>
+
+            <a href="zlxz/zhsw.htm" title="综合事务">综合事务</a>
+          </div>
+        </li>
+
+        <li class="mainmenu"><a href="xxfw.htm" title="信息服务">信息服务</a>
+          <div id="nav" style="display: none;">
+
+            <a href="xxfw/xl.htm" title="校历">校历</a>
+
+            <a href="xxfw/gxylxfs.htm" title="各学院联系方式">各学院联系方式</a>
+
+            <a href="xxfw/zxsj.htm" title="作息时间">作息时间</a>
+
+            <a href="xxfw/Q_A.htm" title="Q&amp;A">Q&amp;A</a>
+          </div>
+        </li>
+        <!--#endeditable-->
+      </ul>
+      <!--网站导航-->
+    </div>
+    <script type="text/javascript">
+      $(function () {
+
+        $(".nav ul li #nav").hide();
+
+        $("li.mainmenu").hover(function () {
+          $(this).find("#nav").stop(true, true);
+          $(this).find("#nav").slideDown();
+        }, function () {
+          $(this).find("#nav").stop(true, true);
+          $(this).find("#nav").slideUp();
+        });
+        $(document).ready(function () {
+          $(".nav ul li").hover(function () {
+            $(this).addClass('cur').siblings().removeClass('cur');
+          });
+        });
+
+      })
+    </script>
+  </div>
+</body>
+
+</html>
