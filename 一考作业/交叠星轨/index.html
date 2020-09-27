@@ -7,6 +7,7 @@
   <title>交叠星轨</title>
   <link rel="stylesheet" href="index.css">
   <script src="index.js"></script>
+  <script src="jquery.min.js"></script>
 </head>
 
 <body>
@@ -14,22 +15,37 @@
     <div class="word">孔&emsp;神&emsp;N&emsp;B</div>
   </div>
   <header>
+    <div class="text1">或许你正在经历,</div>
+    <div class="text2">或许你已成回忆</div>
     <img src="images/header.jpg" alt="">
   </header>
   <nav class="pageMain">
     <ul>
-      <li><a href="#">story&nbsp;故&nbsp;事</a></li>
-      <li><a href="#">Team&nbsp;团&nbsp;队&nbsp;介&nbsp;绍</a></li>
-      <li><a href="#">About&nbsp;Us&nbsp;关&nbsp;于&nbsp;我&nbsp;们</a></li>
-      <li><a href="#">团&nbsp;队&nbsp;介&nbsp;绍</a></li>
-      <li><a href="#">实&nbsp;机&nbsp;演&nbsp;示</a></li>
+      <li><a href="https://www.tiaozhan.com/" target="_blank">story&nbsp;故&nbsp;事</a></li>
+      <li><a href="https://www.tiaozhan.com/" target="_blank">Team&nbsp;团&nbsp;队&nbsp;介&nbsp;绍</a></li>
+      <li><a href="https://www.tiaozhan.com/" target="_blank">About&nbsp;Us&nbsp;关&nbsp;于&nbsp;我&nbsp;们</a>
+        <ul>
+          <li><a href="#">交流QQ群</a></li>
+          <li><a href="#">Bilibili</a></li>
+          <li><a href="#">Taptap</a></li>
+        </ul>
+      </li>
+      <li><a href="#introduction1">团&nbsp;队&nbsp;介&nbsp;绍</a></li>
+      <li><a href="#introduction2">实&nbsp;机&nbsp;演&nbsp;示</a></li>
     </ul>
+    <script>
+      $(function () {
+        $("nav>ul>li").hover(function () {
+          $(this).children("ul").stop().slideToggle();
+        });
+      })
+    </script>
     <div class="search">
       <input type="text">
       <button></button>
     </div>
   </nav>
-  <title class="pageMain"></title>
+  <title id="introduction1" class="pageMain"></title>
   <main class="pageMain">
     <article>
       <p>项目总策划/前项目总监——赵阳阳<br />
@@ -55,28 +71,29 @@
         写代码初次尝试。</p>
       <p>配音——桃子</p>
     </article>
-    <div class="introduction"></div>
+    <div id="introduction2"></div>
     <div class="show">
-
+      <video src="https://stream7.iqilu.com/10339/upload_transcode/202002/18/20200218114723HDu3hhxqIT.mp4"
+        controls="controls"></video>
     </div>
     <footer>
       <div class="logo"><img src="images/logo.png" alt="">
-        <a href="#">关于我们</a></div>
+        <a href="https://www.tiaozhan.com/">关于我们</a></div>
       <div class="detail">
         <ul>
-          <li><a href="#">合作伙伴计划</a></li>
-          <li><a href="#">社区相关</a></li>
-          <li><a href="#">相关活动</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">合作伙伴计划</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">社区相关</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">相关活动</a></li>
         </ul>
         <ul>
-          <li><a href="#">工作计划</a></li>
-          <li><a href="#">法律法规</a></li>
-          <li><a href="#">联系我们</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">工作计划</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">法律法规</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">联系我们</a></li>
         </ul>
         <ul>
-          <li><a href="#">隐私政策</a></li>
-          <li><a href="#">社会责任</a></li>
-          <li><a href="#">反馈给我们</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">隐私政策</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">社会责任</a></li>
+          <li><a href="https://www.tiaozhan.com/" target="_blank">反馈给我们</a></li>
         </ul>
       </div>
       <div class="copyright">Copyright © 2001-2020 TIAOZHAN. All rights reserved. 陕ICP备06001542号</div>
